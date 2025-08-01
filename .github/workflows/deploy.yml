@@ -26,13 +26,6 @@ jobs:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_PASSWORD }}
 
-    - name: Build and push Docker image
-      run: |
-        IMAGE_NAME=chinjuvarghese/2048-app
-        IMAGE_TAG=latest
-        docker build -t $IMAGE_NAME:$IMAGE_TAG .
-        docker push $IMAGE_NAME:$IMAGE_TAG
-
     - name: Setup kubectl
       uses: azure/setup-kubectl@v3  
       with:
