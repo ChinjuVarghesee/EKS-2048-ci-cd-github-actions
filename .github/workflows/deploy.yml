@@ -34,7 +34,7 @@ jobs:
         docker push $IMAGE_NAME:$IMAGE_TAG
 
     - name: Setup kubectl
-      uses: uses: azure/setup-kubectl@v3  
+      uses: azure/setup-kubectl@v3  
       with:
         version: 'v1.33.3'
 
