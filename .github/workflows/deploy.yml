@@ -34,7 +34,7 @@ jobs:
         docker push $IMAGE_NAME:$IMAGE_TAG
 
     - name: Setup kubectl
-      uses: aws-actions/setup-kubectl@v2
+      uses: aws-actions/setup-kubectl@v1  
       with:
         version: 'latest'
 
