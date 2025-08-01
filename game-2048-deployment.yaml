@@ -13,8 +13,8 @@ spec:
         app: game-2048
     spec:
       containers:
-      - name: 2048-container
-        image: alexwhen/docker-2048 # or your image
+      - name: game-2048
+        image: alexwhen/docker-2048
         ports:
         - containerPort: 80
 
